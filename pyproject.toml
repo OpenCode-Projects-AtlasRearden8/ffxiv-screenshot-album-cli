@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ffxiv-shot-album"
+version = "1.0.0"
+description = "Friendly carer for your FFXIV screenshots folder: renames, sorting, duplicates, and a static HTML album. Stdlib only."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "Asdale Dynamics, LLC" }]
+keywords = ["ffxiv", "screenshots", "album", "dedupe", "cli"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Environment :: Console",
+  "License :: OSI Approved :: MIT License",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
